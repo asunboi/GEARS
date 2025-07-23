@@ -190,7 +190,8 @@ class DataSplitter():
 
         self.adata.obs[split_name] = self.adata.obs['condition'].map(map_dict)
 
-        if self.split_type == 'simulation':
+        print(self.split_type)
+        if self.split_type == 'simulation' or self.split_type == 'simulation_single':
             return self.adata, {'test_subgroup': test_subgroup, 
                                 'val_subgroup': val_subgroup
                                }
