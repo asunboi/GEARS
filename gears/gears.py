@@ -464,11 +464,11 @@ class GEARS:
         ax = plt.gca()
         ax.xaxis.set_ticklabels(genes, rotation = 90)
 
-        plt.ylabel("Change in Gene Expression over Control",labelpad=10)
+        ax.set_ylabel("Change in Gene Expression\nover Control",labelpad=10)
         plt.tick_params(axis='x', which='major', pad=5)
         plt.tick_params(axis='y', which='major', pad=5)
         sns.despine()
-        
+
         if save_file:
             plt.savefig(save_file, bbox_inches='tight')
         plt.show()

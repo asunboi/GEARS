@@ -351,7 +351,7 @@ class PertData:
             if split in ['simulation', 'simulation_single']:
                 # simulation split
                 DS = DataSplitter(self.adata, split_type=split)
-                print(f"split_data returns: {DS.split_data(...)}")
+                
                 adata, subgroup = DS.split_data(train_gene_set_size = train_gene_set_size, 
                                                 combo_seen2_train_frac = combo_seen2_train_frac,
                                                 seed=seed,
@@ -450,8 +450,6 @@ class PertData:
                 splits = ['train','val']
             else:
                 splits = ['train','val','test']
-            print(self.set2conditions.keys())
-            print(self.split)
             for i in splits:
                 cell_graphs[i] = []
                 for p in self.set2conditions[i]:
