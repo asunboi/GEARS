@@ -1,0 +1,58 @@
+{
+  "os":  "Linux-3.10.0-1160.105.1.el7.x86_64-x86_64-with-glibc2.17",
+  "python":  "CPython 3.12.11",
+  "startedAt":  "2025-08-25T21:41:36.087167Z",
+  "program":  "/gpfs/home/asun/jin_lab/GEARS/0_boli/model_boli.ipynb",
+  "git":  {
+    "remote":  "https://github.com/asunboi/GEARS",
+    "commit":  "de4f4dcf4b08b1abe3b806559da9e409e8425cf0"
+  },
+  "root":  "/gpfs/group/jin/asun/GEARS/0_boli",
+  "host":  "nodeb609",
+  "executable":  "/gpfs/home/asun/miniforge3/envs/gears/bin/python",
+  "cpu_count":  32,
+  "cpu_count_logical":  32,
+  "gpu":  "NVIDIA RTX A5000",
+  "gpu_count":  4,
+  "disk":  {
+    "/":  {
+      "total":  "218376957952",
+      "used":  "179648847872"
+    }
+  },
+  "memory":  {
+    "total":  "270417764352"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA RTX A5000",
+      "memoryTotal":  "25757220864",
+      "cudaCores":  8192,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-e846a936-62c7-ad3c-fd6c-d01fc5f49ea0"
+    },
+    {
+      "name":  "NVIDIA RTX A5000",
+      "memoryTotal":  "25757220864",
+      "cudaCores":  8192,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-7671ded2-546c-24cb-8f33-1f245cdf31ae"
+    },
+    {
+      "name":  "NVIDIA RTX A5000",
+      "memoryTotal":  "25757220864",
+      "cudaCores":  8192,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-4620f12e-e053-ab50-e9fa-39a56a614627"
+    },
+    {
+      "name":  "NVIDIA RTX A5000",
+      "memoryTotal":  "25757220864",
+      "cudaCores":  8192,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-1b62bff4-cbb6-5407-0ace-83fcdfaf576c"
+    }
+  ],
+  "cudaVersion":  "12.4",
+  "writerId":  "hyanmwg6942i8vakeemi80urvod8n1jo"
+}

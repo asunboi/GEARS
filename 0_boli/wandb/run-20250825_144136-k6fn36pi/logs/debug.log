@@ -1,0 +1,56 @@
+2025-08-25 14:41:36,099 INFO    MainThread:19054 [wandb_setup.py:_flush():80] Current SDK version is 0.21.0
+2025-08-25 14:41:36,099 INFO    MainThread:19054 [wandb_setup.py:_flush():80] Configure stats pid to 19054
+2025-08-25 14:41:36,099 INFO    MainThread:19054 [wandb_setup.py:_flush():80] Loading settings from /gpfs/home/asun/.config/wandb/settings
+2025-08-25 14:41:36,099 INFO    MainThread:19054 [wandb_setup.py:_flush():80] Loading settings from /gpfs/group/jin/asun/GEARS/0_boli/wandb/settings
+2025-08-25 14:41:36,099 INFO    MainThread:19054 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-08-25 14:41:36,099 INFO    MainThread:19054 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /gpfs/group/jin/asun/GEARS/0_boli/wandb/run-20250825_144136-k6fn36pi/logs/debug.log
+2025-08-25 14:41:36,099 INFO    MainThread:19054 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /gpfs/group/jin/asun/GEARS/0_boli/wandb/run-20250825_144136-k6fn36pi/logs/debug-internal.log
+2025-08-25 14:41:36,099 INFO    MainThread:19054 [wandb_init.py:monkeypatch_ipython():622] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f6e00c7be90>
+2025-08-25 14:41:36,100 INFO    MainThread:19054 [wandb_init.py:init():830] calling init triggers
+2025-08-25 14:41:36,100 INFO    MainThread:19054 [wandb_init.py:init():835] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-08-25 14:41:36,100 INFO    MainThread:19054 [wandb_init.py:init():871] starting backend
+2025-08-25 14:41:37,410 INFO    MainThread:19054 [wandb_init.py:init():874] sending inform_init request
+2025-08-25 14:41:37,439 INFO    MainThread:19054 [wandb_init.py:init():882] backend started and connected
+2025-08-25 14:41:37,445 INFO    MainThread:19054 [wandb_run.py:_label_probe_notebook():1304] probe notebook
+2025-08-25 14:41:37,449 INFO    MainThread:19054 [wandb_init.py:init():953] updated telemetry
+2025-08-25 14:41:37,457 INFO    MainThread:19054 [wandb_init.py:init():977] communicating run to backend with 90.0 second timeout
+2025-08-25 14:41:43,108 INFO    MainThread:19054 [wandb_init.py:init():1029] starting run threads in backend
+2025-08-25 14:41:44,818 INFO    MainThread:19054 [wandb_run.py:_console_start():2458] atexit reg
+2025-08-25 14:41:44,818 INFO    MainThread:19054 [wandb_run.py:_redirect():2306] redirect: wrap_raw
+2025-08-25 14:41:44,820 INFO    MainThread:19054 [wandb_run.py:_redirect():2375] Wrapping output streams.
+2025-08-25 14:41:44,820 INFO    MainThread:19054 [wandb_run.py:_redirect():2398] Redirects installed.
+2025-08-25 14:41:44,831 INFO    MainThread:19054 [wandb_init.py:init():1075] run started, returning control to user process
+2025-08-25 14:41:45,637 INFO    MainThread:19054 [wandb_run.py:_config_callback():1363] config_cb None None {'hidden_size': 64, 'num_go_gnn_layers': 1, 'num_gene_gnn_layers': 1, 'decoder_hidden_size': 16, 'num_similar_genes_go_graph': 20, 'num_similar_genes_co_express_graph': 20, 'coexpress_threshold': 0.4, 'uncertainty': False, 'uncertainty_reg': 1, 'direction_lambda': 0.1, 'G_go': None, 'G_go_weight': None, 'G_coexpress': None, 'G_coexpress_weight': None, 'device': 'cuda:1', 'num_genes': 5000, 'num_perts': 9853, 'no_perturb': False}
+2025-08-25 14:42:16,127 INFO    MainThread:19054 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-08-25 14:42:28,470 INFO    MainThread:19054 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-08-25 14:42:28,471 INFO    MainThread:19054 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-08-25 14:45:03,429 INFO    MainThread:19054 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-08-25 14:45:28,379 INFO    MainThread:19054 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-08-25 14:45:28,380 INFO    MainThread:19054 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-08-25 14:45:28,615 INFO    MainThread:19054 [wandb_run.py:_config_callback():1363] config_cb None None {'hidden_size': 64, 'num_go_gnn_layers': 1, 'num_gene_gnn_layers': 1, 'decoder_hidden_size': 16, 'num_similar_genes_go_graph': 20, 'num_similar_genes_co_express_graph': 20, 'coexpress_threshold': 0.4, 'uncertainty': False, 'uncertainty_reg': 1, 'direction_lambda': 0.1, 'G_go': '[[   0    0    0 ... 9649 9669 9693]\n [   0  126  514 ... 9649 9669 9693]]', 'G_go_weight': '[1.         0.17391305 0.16       ... 1.         1.         1.        ]', 'G_coexpress': '[[3108 3108 3108 ... 4997 4998 4999]\n [   0 3108 4941 ... 4997 4998 4999]]', 'G_coexpress_weight': '[0.7835394  0.9999177  0.47615567 ... 1.         0.9999997  1.        ]', 'device': 'cuda:1', 'num_genes': 5000, 'num_perts': 9853, 'no_perturb': False}
+2025-08-25 14:45:28,701 INFO    MainThread:19054 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-08-25 14:45:43,177 INFO    MainThread:19054 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-08-25 14:45:43,177 INFO    MainThread:19054 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-08-25 14:45:43,181 INFO    MainThread:19054 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-08-25 14:45:54,885 INFO    MainThread:19054 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-08-25 14:45:54,885 INFO    MainThread:19054 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-08-25 14:45:56,585 INFO    MainThread:19054 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-08-25 14:46:24,722 INFO    MainThread:19054 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-08-25 14:46:24,722 INFO    MainThread:19054 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-08-25 14:46:25,319 INFO    MainThread:19054 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-08-25 14:52:58,203 INFO    MainThread:19054 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-08-25 14:52:58,203 INFO    MainThread:19054 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-08-25 14:52:58,599 INFO    MainThread:19054 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-08-25 14:53:19,048 INFO    MainThread:19054 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-08-25 14:53:19,048 INFO    MainThread:19054 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-08-25 14:53:19,585 INFO    MainThread:19054 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-08-25 15:25:53,448 INFO    MainThread:19054 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-08-25 15:25:53,448 INFO    MainThread:19054 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-08-25 15:25:53,986 INFO    MainThread:19054 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-08-25 15:26:56,287 INFO    MainThread:19054 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-08-25 15:26:56,287 INFO    MainThread:19054 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-08-25 15:26:56,807 INFO    MainThread:19054 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-08-25 15:27:05,773 INFO    MainThread:19054 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-08-25 15:27:05,774 INFO    MainThread:19054 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-08-25 15:27:06,225 INFO    MainThread:19054 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
