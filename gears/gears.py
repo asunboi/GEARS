@@ -448,20 +448,34 @@ class GEARS:
         ctrl_means = adata[adata.obs['condition'] == 'ctrl'].to_df().mean()[
             de_idx].values
 
+        # changed to mean truth / mean logFC
+        mean_truth = truth.mean(axis=0)
+        
         pred = pred - ctrl_means
-        truth = truth - ctrl_means
+        truth = mean_truth - ctrl_means
         
         plt.figure(figsize=[16.5,4.5])
         plt.title(query)
-        plt.boxplot(truth, showfliers=False,
-                    medianprops = dict(linewidth=0))    
+
+        # changed to plotting as a single dot
+        # plt.boxplot(truth, showfliers=False,
+        #             medianprops = dict(linewidth=0))    
+
+        # for i in range(truth.shape[0]):
+        #     _ = plt.scatter(i+1, truth[i], color='blue')
 
         for i in range(pred.shape[0]):
-            _ = plt.scatter(i+1, pred[i], color='red')
+            plt.scatter(i+1, pred[i], color='red')
+            plt.scatter(i+1, truth[i], color='blue')
 
         plt.axhline(0, linestyle="dashed", color = 'green')
-
+        
         ax = plt.gca()
+
+        #add tick positions
+
+        ax.set_xticks(range(1, pred.shape[0] + 1))
+
         ax.xaxis.set_ticklabels(genes, rotation = 90)
 
         ax.set_ylabel("Change in Gene Expression\nover Control",labelpad=10)

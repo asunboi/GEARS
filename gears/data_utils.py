@@ -200,13 +200,17 @@ class DataSplitter():
     def get_simulation_split_single(self, pert_list, train_gene_set_size = 0.85, seed = 1, test_set_perts = None, only_test_set_perts = False):
         unique_pert_genes = self.get_genes_from_perts(pert_list)
         
+        print(unique_pert_genes)
+
         pert_train = []
         pert_test = []
         np.random.seed(seed=seed)
         
         if only_test_set_perts and (test_set_perts is not None):
-            ood_genes = np.array(test_set_perts)
+            ood_genes = self.get_genes_from_perts(test_set_perts)
+            print(ood_genes)
             train_gene_candidates = np.setdiff1d(unique_pert_genes, ood_genes)
+            print(train_gene_candidates)
         else:
             ## a pre-specified list of genes
             train_gene_candidates = np.random.choice(unique_pert_genes,
